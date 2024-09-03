@@ -78,7 +78,7 @@ public class SequentialChange : MonoBehaviour
 
     public void BeginChange()//this method starts the change and is called by the event Change
     {
-        if (objectsInOrder.Count > 0) // check that there are objects in list
+        if (objectsInOrder.Count > 0 && !changing) // check that there are objects in list
         {
             index = 0;
             changing = true;
